@@ -4,6 +4,11 @@ const btn = document.getElementsByClassName('btn'),
 btn[0].onclick = function () {
   banner.src =
     'https://images.unsplash.com/photo-1522156373667-4c7234bbd804?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80';
+
+  banner.classList.add('zoom');
+  setTimeout(function () {
+    banner.classList.remove('zoom');
+  }, 500);
 };
 
 btn[1].onclick = function () {
